@@ -1,0 +1,331 @@
+$date
+   Mon Apr 13 06:10:20 2026
+$end
+$version
+  P.20131013
+$end
+$timescale
+  1ps
+$end
+$scope module Project_3_Abdulrahmaan_lawal_tb $end
+$var wire 1 ! out [31] $end
+$var wire 1 " out [30] $end
+$var wire 1 # out [29] $end
+$var wire 1 $ out [28] $end
+$var wire 1 % out [27] $end
+$var wire 1 & out [26] $end
+$var wire 1 ' out [25] $end
+$var wire 1 ( out [24] $end
+$var wire 1 ) out [23] $end
+$var wire 1 * out [22] $end
+$var wire 1 + out [21] $end
+$var wire 1 , out [20] $end
+$var wire 1 - out [19] $end
+$var wire 1 . out [18] $end
+$var wire 1 / out [17] $end
+$var wire 1 0 out [16] $end
+$var wire 1 1 out [15] $end
+$var wire 1 2 out [14] $end
+$var wire 1 3 out [13] $end
+$var wire 1 4 out [12] $end
+$var wire 1 5 out [11] $end
+$var wire 1 6 out [10] $end
+$var wire 1 7 out [9] $end
+$var wire 1 8 out [8] $end
+$var wire 1 9 out [7] $end
+$var wire 1 : out [6] $end
+$var wire 1 ; out [5] $end
+$var wire 1 < out [4] $end
+$var wire 1 = out [3] $end
+$var wire 1 > out [2] $end
+$var wire 1 ? out [1] $end
+$var wire 1 @ out [0] $end
+$var wire 1 A Z $end
+$var wire 1 B N $end
+$var wire 1 C C $end
+$var wire 1 D V $end
+$var reg 32 E ina [31:0] $end
+$var reg 32 F inb [31:0] $end
+$var reg 5 G opcode [4:0] $end
+$var reg 1 H clk $end
+$var reg 1 I rst $end
+$scope module uut $end
+$var wire 1 J ina [31] $end
+$var wire 1 K ina [30] $end
+$var wire 1 L ina [29] $end
+$var wire 1 M ina [28] $end
+$var wire 1 N ina [27] $end
+$var wire 1 O ina [26] $end
+$var wire 1 P ina [25] $end
+$var wire 1 Q ina [24] $end
+$var wire 1 R ina [23] $end
+$var wire 1 S ina [22] $end
+$var wire 1 T ina [21] $end
+$var wire 1 U ina [20] $end
+$var wire 1 V ina [19] $end
+$var wire 1 W ina [18] $end
+$var wire 1 X ina [17] $end
+$var wire 1 Y ina [16] $end
+$var wire 1 Z ina [15] $end
+$var wire 1 [ ina [14] $end
+$var wire 1 \ ina [13] $end
+$var wire 1 ] ina [12] $end
+$var wire 1 ^ ina [11] $end
+$var wire 1 _ ina [10] $end
+$var wire 1 ` ina [9] $end
+$var wire 1 a ina [8] $end
+$var wire 1 b ina [7] $end
+$var wire 1 c ina [6] $end
+$var wire 1 d ina [5] $end
+$var wire 1 e ina [4] $end
+$var wire 1 f ina [3] $end
+$var wire 1 g ina [2] $end
+$var wire 1 h ina [1] $end
+$var wire 1 i ina [0] $end
+$var wire 1 j inb [31] $end
+$var wire 1 k inb [30] $end
+$var wire 1 l inb [29] $end
+$var wire 1 m inb [28] $end
+$var wire 1 n inb [27] $end
+$var wire 1 o inb [26] $end
+$var wire 1 p inb [25] $end
+$var wire 1 q inb [24] $end
+$var wire 1 r inb [23] $end
+$var wire 1 s inb [22] $end
+$var wire 1 t inb [21] $end
+$var wire 1 u inb [20] $end
+$var wire 1 v inb [19] $end
+$var wire 1 w inb [18] $end
+$var wire 1 x inb [17] $end
+$var wire 1 y inb [16] $end
+$var wire 1 z inb [15] $end
+$var wire 1 { inb [14] $end
+$var wire 1 | inb [13] $end
+$var wire 1 } inb [12] $end
+$var wire 1 ~ inb [11] $end
+$var wire 1 !! inb [10] $end
+$var wire 1 "! inb [9] $end
+$var wire 1 #! inb [8] $end
+$var wire 1 $! inb [7] $end
+$var wire 1 %! inb [6] $end
+$var wire 1 &! inb [5] $end
+$var wire 1 '! inb [4] $end
+$var wire 1 (! inb [3] $end
+$var wire 1 )! inb [2] $end
+$var wire 1 *! inb [1] $end
+$var wire 1 +! inb [0] $end
+$var wire 1 ,! opcode [4] $end
+$var wire 1 -! opcode [3] $end
+$var wire 1 .! opcode [2] $end
+$var wire 1 /! opcode [1] $end
+$var wire 1 0! opcode [0] $end
+$var wire 1 1! clk $end
+$var wire 1 2! rst $end
+$var reg 32 3! out [31:0] $end
+$var reg 1 4! Z $end
+$var reg 1 5! N $end
+$var reg 1 6! C $end
+$var reg 1 7! V $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+xf
+x?
+x@
+xh
+xg
+xi
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+xe
+xd
+xc
+xb
+xa
+x`
+x_
+x^
+x]
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+xS
+xR
+xQ
+xP
+xO
+xN
+xM
+xL
+xK
+xJ
+x+!
+bx E
+bx F
+bx G
+0H
+1I
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+xA
+xB
+xC
+xD
+bx 3!
+x4!
+x5!
+x6!
+x7!
+x*!
+x)!
+x(!
+x'!
+x&!
+x%!
+x$!
+x#!
+x"!
+x!!
+x~
+x}
+x|
+x{
+xz
+xy
+xx
+xw
+xv
+xu
+xt
+xs
+xr
+xq
+xp
+xo
+xn
+xm
+xl
+xk
+xj
+x0!
+x/!
+x.!
+x-!
+x,!
+01!
+12!
+$end
+#10
+0?
+0@
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+1H
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+0A
+0B
+0C
+0D
+b0 3!
+04!
+05!
+06!
+07!
+11!
+#20
+1f
+0h
+0g
+0i
+1e
+1d
+1c
+0b
+0a
+1`
+1_
+0^
+1]
+0\
+1[
+0Z
+0Y
+0X
+1W
+0V
+1U
+1T
+0S
+0R
+0Q
+1P
+0O
+0N
+1M
+0L
+0K
+0J
+0+!
+b10010001101000101011001111000 E
+b

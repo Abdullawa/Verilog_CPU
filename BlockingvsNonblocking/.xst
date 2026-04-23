@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Shared_drive_for_ECE_4375/BlockingvsNonblocking/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Shared_drive_for_ECE_4375/BlockingvsNonblocking/xst"
+elaborate
+-ifn .prj
+-ifmt mixed

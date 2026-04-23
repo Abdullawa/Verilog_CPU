@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/Shared_drive_for_ECE_4375/FourtoOneMUX/MUX.xst" -ofn "/home/ise/Shared_drive_for_ECE_4375/FourtoOneMUX/MUX.syr" 

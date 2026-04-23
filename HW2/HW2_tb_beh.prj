@@ -1,0 +1,6 @@
+verilog work "twoInputNOR.v"
+verilog work "twoInputNAND.v"
+verilog work "ThreeInputAND.v"
+verilog work "combined.v"
+verilog work "HW2_tb.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

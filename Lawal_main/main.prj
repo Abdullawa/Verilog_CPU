@@ -1,0 +1,4 @@
+verilog work "../coinCounterOut/coinCounterOut.v"
+verilog work "../coinCounter/coinCounter.v"
+verilog work "../bevDispenser/bevDispenser.v"
+verilog work "main.v"

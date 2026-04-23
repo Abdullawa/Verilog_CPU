@@ -1,0 +1,28 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/ise/Shared_drive_for_ECE_4375/AbdulrahmaanLawal-RAM-Project4/my_ram_tb_isim_beh.exe -prj /home/ise/Shared_drive_for_ECE_4375/AbdulrahmaanLawal-RAM-Project4/my_ram_tb_beh.prj work.my_ram_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/AbdulrahmaanLawal-RAM-Project4/ipcore_dir/RAM.v" into library work
+Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/AbdulrahmaanLawal-RAM-Project4/my_ram.v" into library work
+Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/AbdulrahmaanLawal-RAM-Project4/my_ram_tb.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96324 KB
+Fuse CPU Usage: 880 ms
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module RAM
+Compiling module my_ram
+Compiling module my_ram_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 9 Verilog Units
+Built simulation executable /home/ise/Shared_drive_for_ECE_4375/AbdulrahmaanLawal-RAM-Project4/my_ram_tb_isim_beh.exe
+Fuse Memory Usage: 102712 KB
+Fuse CPU Usage: 1450 ms
+GCC CPU Usage: 2350 ms

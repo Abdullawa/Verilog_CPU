@@ -1,0 +1,29 @@
+Command line:
+   coinCounterOut_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  34032
+
+Fri Feb 27 01:24:17 2026
+
+
+ Elaboration Time: 0.14 sec
+
+ Current Memory Usage: 215.245 Meg
+
+ Total Signals          : 19
+ Total Nets             : 29
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 15
+ Total Traceable Variables  : 29
+ Total Scalar Nets and Variables : 177
+Total Line Count : 59
+
+ Total Simulation Time: 0.18 sec
+
+ Current Memory Usage: 292.844 Meg
+
+Fri Feb 27 01:27:52 2026
+

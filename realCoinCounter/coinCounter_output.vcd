@@ -1,0 +1,92 @@
+$date
+   Fri Feb 27 01:33:59 2026
+$end
+$version
+  P.20131013
+$end
+$timescale
+  1ps
+$end
+$scope module coinCounter_tb $end
+$var wire 1 ! moneycounter [9] $end
+$var wire 1 " moneycounter [8] $end
+$var wire 1 # moneycounter [7] $end
+$var wire 1 $ moneycounter [6] $end
+$var wire 1 % moneycounter [5] $end
+$var wire 1 & moneycounter [4] $end
+$var wire 1 ' moneycounter [3] $end
+$var wire 1 ( moneycounter [2] $end
+$var wire 1 ) moneycounter [1] $end
+$var wire 1 * moneycounter [0] $end
+$var reg 1 + indime $end
+$var reg 1 , inquarter $end
+$var reg 1 - innickel $end
+$var reg 1 . rst $end
+$scope module uut $end
+$var wire 1 / indime $end
+$var wire 1 0 inquarter $end
+$var wire 1 1 innickel $end
+$var wire 1 2 rst $end
+$var wire 1 3 moneyentered $end
+$var reg 10 4 moneycounter [9:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0*
+00
+0/
+01
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+12
+0+
+0,
+0-
+1.
+b0 4
+03
+$end
+#20000
+1/
+1)
+1'
+02
+1+
+0.
+b1010 4
+13
+#40000
+0/
+0+
+03
+#60000
+1*
+11
+1(
+1-
+b1111 4
+13
+#80000
+01
+0-
+03
+#100000
+0*
+10
+0)
+0(
+1%
+1,
+b101000 4
+13
+#120000
+0,

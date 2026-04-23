@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/Shared_drive_for_ECE_4375/Project_3/Project_3_Abdulrahmaan_lawal_tb_isim_beh.exe" -prj "/home/ise/Shared_drive_for_ECE_4375/Project_3/Project_3_Abdulrahmaan_lawal_tb_beh.prj" "work.Project_3_Abdulrahmaan_lawal_tb" "work.glbl" 

@@ -1,0 +1,29 @@
+Command line:
+   bevDispenser_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58334
+
+Fri Feb 27 01:29:50 2026
+
+
+ Elaboration Time: 0.16 sec
+
+ Current Memory Usage: 215.245 Meg
+
+ Total Signals          : 25
+ Total Nets             : 45
+ Total Signal Drivers   : 17
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 20
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 207
+Total Line Count : 59
+
+ Total Simulation Time: 0.21 sec
+
+ Current Memory Usage: 292.844 Meg
+
+Fri Feb 27 02:52:30 2026
+

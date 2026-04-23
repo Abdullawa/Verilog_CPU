@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/ise/Shared_drive_for_ECE_4375/TwoToFourDecoder/TwoToFourDec.xst" -ofn "/home/ise/Shared_drive_for_ECE_4375/TwoToFourDecoder/TwoToFourDec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1400an-fgg676-4 TwoToFourDec.ngc TwoToFourDec.ngd  
+map -intstyle ise -p xc3s1400an-fgg676-4 -cm area -ir off -pr off -c 100 -o TwoToFourDec_map.ncd TwoToFourDec.ngd TwoToFourDec.pcf 

@@ -1,0 +1,108 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000023ae2809da0 .scope module, "coinCounter_tb" "coinCounter_tb" 2 3;
+ .timescale -9 -12;
+v0000023ae280b890_0 .var "indime", 0 0;
+v0000023ae280b930_0 .var "innickel", 0 0;
+v0000023ae280b9d0_0 .var "inquarter", 0 0;
+v0000023ae280ba70_0 .net "moneycounter", 9 0, v0000023ae280d150_0;  1 drivers
+v0000023ae280bb10_0 .var "rst", 0 0;
+S_0000023ae280cde0 .scope module, "uut" "coinCounter" 2 7, 3 2 0, S_0000023ae2809da0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "indime";
+    .port_info 1 /INPUT 1 "inquarter";
+    .port_info 2 /INPUT 1 "innickel";
+    .port_info 3 /OUTPUT 10 "moneycounter";
+    .port_info 4 /INPUT 1 "rst";
+P_0000023ae2809f30 .param/l "DIME_VALUE" 0 3 5, C4<0000001010>;
+P_0000023ae2809f68 .param/l "NICKEL_VALUE" 0 3 4, C4<0000000101>;
+P_0000023ae2809fa0 .param/l "QUARTER_VALUE" 0 3 3, C4<0000011001>;
+L_0000023ae280d1f0 .functor OR 1, v0000023ae280b890_0, v0000023ae280b9d0_0, C4<0>, C4<0>;
+L_0000023ae2809fe0 .functor OR 1, L_0000023ae280d1f0, v0000023ae280b930_0, C4<0>, C4<0>;
+v0000023ae280cf70_0 .net *"_ivl_0", 0 0, L_0000023ae280d1f0;  1 drivers
+v0000023ae2806980_0 .net "indime", 0 0, v0000023ae280b890_0;  1 drivers
+v0000023ae280d010_0 .net "innickel", 0 0, v0000023ae280b930_0;  1 drivers
+v0000023ae280d0b0_0 .net "inquarter", 0 0, v0000023ae280b9d0_0;  1 drivers
+v0000023ae280d150_0 .var "moneycounter", 9 0;
+v0000023ae280b750_0 .net "moneyentered", 0 0, L_0000023ae2809fe0;  1 drivers
+v0000023ae280b7f0_0 .net "rst", 0 0, v0000023ae280bb10_0;  1 drivers
+E_0000023ae2858bb0 .event posedge, v0000023ae280b7f0_0, v0000023ae280b750_0;
+    .scope S_0000023ae280cde0;
+T_0 ;
+    %wait E_0000023ae2858bb0;
+    %load/vec4 v0000023ae280b7f0_0;
+    %cmpi/e 1, 0, 1;
+    %jmp/0xz  T_0.0, 4;
+    %pushi/vec4 0, 0, 10;
+    %assign/vec4 v0000023ae280d150_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0000023ae280d150_0;
+    %load/vec4 v0000023ae2806980_0;
+    %pad/u 10;
+    %muli 10, 0, 10;
+    %add;
+    %load/vec4 v0000023ae280d0b0_0;
+    %pad/u 10;
+    %muli 25, 0, 10;
+    %add;
+    %load/vec4 v0000023ae280d010_0;
+    %pad/u 10;
+    %muli 5, 0, 10;
+    %add;
+    %assign/vec4 v0000023ae280d150_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0000023ae2809da0;
+T_1 ;
+    %vpi_call 2 10 "$dumpfile", "coinCounter_output.vcd" {0 0 0};
+    %vpi_call 2 11 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000023ae2809da0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023ae280b890_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023ae280b9d0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023ae280b930_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023ae280bb10_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023ae280bb10_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023ae280b890_0, 0, 1;
+    %delay 20000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023ae280bb10_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023ae280b890_0, 0, 1;
+    %delay 20000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023ae280b890_0, 0, 1;
+    %delay 20000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023ae280b930_0, 0, 1;
+    %delay 20000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023ae280b930_0, 0, 1;
+    %delay 20000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023ae280b9d0_0, 0, 1;
+    %delay 20000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023ae280b9d0_0, 0, 1;
+    %vpi_call 2 31 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "coinCounter_tb.v";
+    "coinCounter.v";

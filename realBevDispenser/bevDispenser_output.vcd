@@ -1,0 +1,200 @@
+$date
+   Fri Feb 27 01:29:51 2026
+$end
+$version
+  P.20131013
+$end
+$timescale
+  1ps
+$end
+$scope module bevDispenser_tb $end
+$var wire 1 ! outbev1 $end
+$var wire 1 " outbev2 $end
+$var wire 1 # outbev3 $end
+$var wire 1 $ outbev4 $end
+$var wire 1 % change [10] $end
+$var wire 1 & change [9] $end
+$var wire 1 ' change [8] $end
+$var wire 1 ( change [7] $end
+$var wire 1 ) change [6] $end
+$var wire 1 * change [5] $end
+$var wire 1 + change [4] $end
+$var wire 1 , change [3] $end
+$var wire 1 - change [2] $end
+$var wire 1 . change [1] $end
+$var wire 1 / change [0] $end
+$var reg 1 0 inbev1 $end
+$var reg 1 1 inbev2 $end
+$var reg 1 2 inbev3 $end
+$var reg 1 3 inbev4 $end
+$var reg 1 4 rst $end
+$var reg 11 5 inmoney [10:0] $end
+$scope module uut $end
+$var wire 1 6 inbev1 $end
+$var wire 1 7 inbev2 $end
+$var wire 1 8 inbev3 $end
+$var wire 1 9 inbev4 $end
+$var wire 1 : rst $end
+$var wire 1 ; inmoney [10] $end
+$var wire 1 < inmoney [9] $end
+$var wire 1 = inmoney [8] $end
+$var wire 1 > inmoney [7] $end
+$var wire 1 ? inmoney [6] $end
+$var wire 1 @ inmoney [5] $end
+$var wire 1 A inmoney [4] $end
+$var wire 1 B inmoney [3] $end
+$var wire 1 C inmoney [2] $end
+$var wire 1 D inmoney [1] $end
+$var wire 1 E inmoney [0] $end
+$var wire 1 F beventered $end
+$var reg 1 G outbev1 $end
+$var reg 1 H outbev2 $end
+$var reg 1 I outbev3 $end
+$var reg 1 J outbev4 $end
+$var reg 11 K change [10:0] $end
+$var reg 11 L tottalbevvalue [10:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+06
+0!
+0#
+07
+0"
+0$
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+08
+09
+1:
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+00
+01
+02
+03
+14
+b0 5
+0&
+0%
+0G
+0H
+0I
+0J
+b0 K
+bx L
+0F
+$end
+#20000
+16
+1!
+1/
+1,
+1+
+0:
+1B
+1?
+1>
+10
+04
+b11001000 5
+1G
+b11001 K
+b10101111 L
+1F
+#40000
+06
+0B
+0?
+0>
+00
+b0 5
+0F
+#60000
+0!
+0/
+0+
+1)
+1(
+18
+1B
+1?
+1>
+12
+b11001000 5
+0G
+b11001000 K
+b11100001 L
+1F
+#80000
+08
+0B
+0?
+0>
+02
+b0 5
+0F
+#100000
+17
+1"
+0,
+0)
+0(
+1B
+1?
+1>
+11
+b11001000 5
+1H
+b0 K
+b11001000 L
+1F
+#120000
+07
+0B
+0?
+0>
+01
+b0 5
+0F
+#140000
+0"
+1,
+1)
+1(
+19
+1B
+1?
+1>
+13
+b11001000 5
+0H
+b11001000 K
+b11111010 L
+1F
+#160000
+09
+0B
+0?
+0>
+03
+b0 5
+0F

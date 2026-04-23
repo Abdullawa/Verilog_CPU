@@ -1,0 +1,14 @@
+**** module/scope: register_file
+     Flip-Flops   : 32
+     Logic Gates  : 129
+     EQUALITY[32]: 2 units
+     LPM[30]: 2 unaccounted
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** TOTALS
+     Flip-Flops   : 32
+     Logic Gates  : 129
+     EQUALITY[32]: 2 units
+     LPM[30]: 2 unaccounted
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted

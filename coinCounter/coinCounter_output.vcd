@@ -1,0 +1,69 @@
+$date
+	Sun Feb 22 15:57:25 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module coinCounter_tb $end
+$var wire 10 ! moneycounter [9:0] $end
+$var reg 1 " indime $end
+$var reg 1 # innickel $end
+$var reg 1 $ inquarter $end
+$var reg 1 % rst $end
+$scope module uut $end
+$var wire 1 " indime $end
+$var wire 1 # innickel $end
+$var wire 1 $ inquarter $end
+$var wire 1 & moneyentered $end
+$var wire 1 % rst $end
+$var parameter 10 ' DIME_VALUE $end
+$var parameter 10 ( NICKEL_VALUE $end
+$var parameter 10 ) QUARTER_VALUE $end
+$var reg 10 * moneycounter [9:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11001 )
+b101 (
+b1010 '
+$end
+#0
+$dumpvars
+b0 *
+0&
+1%
+0$
+0#
+0"
+b0 !
+$end
+#20000
+b1010 !
+b1010 *
+1&
+1"
+0%
+#40000
+0&
+0"
+#60000
+b1111 !
+b1111 *
+1&
+1#
+#80000
+0&
+0#
+#100000
+b101000 !
+b101000 *
+1&
+1$
+#120000
+0&
+0$

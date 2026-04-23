@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/Shared_drive_for_ECE_4375/register_file/register_file_tb_isim_beh.exe" -prj "/home/ise/Shared_drive_for_ECE_4375/register_file/register_file_tb_beh.prj" "work.register_file_tb" "work.glbl" 

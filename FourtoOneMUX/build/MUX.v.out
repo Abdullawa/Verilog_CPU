@@ -1,0 +1,77 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000028dcc49edc0 .scope module, "MUX" "MUX" 2 21;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 2 "sel";
+    .port_info 1 /INPUT 4 "A";
+    .port_info 2 /INPUT 4 "B";
+    .port_info 3 /INPUT 4 "C";
+    .port_info 4 /INPUT 4 "D";
+    .port_info 5 /OUTPUT 4 "Y";
+o0000028dcc556fd8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000028dcc4963e0_0 .net "A", 3 0, o0000028dcc556fd8;  0 drivers
+o0000028dcc557008 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000028dcc59bc40_0 .net "B", 3 0, o0000028dcc557008;  0 drivers
+o0000028dcc557038 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000028dcc59bce0_0 .net "C", 3 0, o0000028dcc557038;  0 drivers
+o0000028dcc557068 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000028dcc59bd80_0 .net "D", 3 0, o0000028dcc557068;  0 drivers
+v0000028dcc59be20_0 .var "Y", 3 0;
+o0000028dcc5570c8 .functor BUFZ 2, C4<zz>; HiZ drive
+v0000028dcc59bec0_0 .net "sel", 1 0, o0000028dcc5570c8;  0 drivers
+E_0000028dcc556670/0 .event anyedge, v0000028dcc59bd80_0, v0000028dcc59bce0_0, v0000028dcc59bc40_0, v0000028dcc4963e0_0;
+E_0000028dcc556670/1 .event anyedge, v0000028dcc59bec0_0;
+E_0000028dcc556670 .event/or E_0000028dcc556670/0, E_0000028dcc556670/1;
+    .scope S_0000028dcc49edc0;
+T_0 ;
+    %wait E_0000028dcc556670;
+    %load/vec4 v0000028dcc59bec0_0;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 2;
+    %cmp/u;
+    %jmp/1 T_0.0, 6;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 2;
+    %cmp/u;
+    %jmp/1 T_0.1, 6;
+    %dup/vec4;
+    %pushi/vec4 2, 0, 2;
+    %cmp/u;
+    %jmp/1 T_0.2, 6;
+    %dup/vec4;
+    %pushi/vec4 3, 0, 2;
+    %cmp/u;
+    %jmp/1 T_0.3, 6;
+    %jmp T_0.4;
+T_0.0 ;
+    %load/vec4 v0000028dcc4963e0_0;
+    %assign/vec4 v0000028dcc59be20_0, 0;
+    %jmp T_0.4;
+T_0.1 ;
+    %load/vec4 v0000028dcc59bc40_0;
+    %assign/vec4 v0000028dcc59be20_0, 0;
+    %jmp T_0.4;
+T_0.2 ;
+    %load/vec4 v0000028dcc59bce0_0;
+    %assign/vec4 v0000028dcc59be20_0, 0;
+    %jmp T_0.4;
+T_0.3 ;
+    %load/vec4 v0000028dcc59bd80_0;
+    %assign/vec4 v0000028dcc59be20_0, 0;
+    %jmp T_0.4;
+T_0.4 ;
+    %pop/vec4 1;
+    %jmp T_0;
+    .thread T_0, $push;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "MUX.v";

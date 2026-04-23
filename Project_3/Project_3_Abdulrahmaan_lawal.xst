@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Shared_drive_for_ECE_4375/Project_3/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Shared_drive_for_ECE_4375/Project_3/xst"
+elaborate
+-ifn Project_3_Abdulrahmaan_lawal.prj
+-ifmt mixed

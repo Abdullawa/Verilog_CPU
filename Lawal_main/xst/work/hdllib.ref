@@ -1,0 +1,4 @@
+MO coinCounterOut NULL ../coinCounterOut/coinCounterOut.v vlg05/coin_counter_out.bin 1772159767
+MO coinCounter NULL ../coinCounter/coinCounter.v vlg25/coin_counter.bin 1772159767
+MO main NULL main.v vlg2D/main.bin 1772159767
+MO bevDispenser NULL ../bevDispenser/bevDispenser.v vlg4A/bev_dispenser.bin 1772159767

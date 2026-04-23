@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Shared_drive_for_ECE_4375/realCoinCounter/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Shared_drive_for_ECE_4375/realCoinCounter/xst"
+elaborate
+-ifn coinCounterOut.prj
+-ifmt mixed

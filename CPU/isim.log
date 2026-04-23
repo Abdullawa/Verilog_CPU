@@ -1,0 +1,107 @@
+ISim log file
+Running: /home/ise/Shared_drive_for_ECE_4375/CPU/CPU_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/Shared_drive_for_ECE_4375/CPU/CPU_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+----------------------------------------------------------------------
+INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:63 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:68 - For more information or for assistance in obtaining 
+ a license, please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses".)
+INFO:Security:68a - user is ise, on host localhost.localdomain.
+INFO:Security:15 - A feature for ISIM was found but is for the wrong hostid.
+ERROR:Security:14 - No feature was available for 'ISIM'.
+
+Invalid host.
+ The hostid of this system does not match the hostid
+ specified in the license file.
+Feature:       ISIM
+Hostid:        08002768c935
+License path:  /home/ise/.Xilinx/Xilinx.lic:/opt/Xilinx/14.7/ISE_DS/ISE//data/*.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/Xilinx.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/XilinxFree.lic:/opt/Xilinx/14.7/ISE_DS/EDK/data/core_licenses/Xilinx.lic:
+FLEXnet Licensing error:-9,57
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.flexerasoftware.com".
+----------------------------------------------------------------------
+WARNING: A full ISim License cannot be checked out due to the issues listed above. Please use Xilinx License Configuration Manager to fix these issues in order to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module CPU_tb.dut.u3.rom_inst.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module CPU_tb.dut.u4.ram_inst.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+Cycle:           0, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:         1
+Cycle:           1, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:        65
+Cycle:           2, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       129
+Cycle:           3, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       193
+Cycle:           4, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       257
+Cycle:           5, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       321
+Cycle:           6, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       385
+Cycle:           7, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       449
+Cycle:           8, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       513
+Cycle:           9, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       577
+Cycle:          10, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       641
+Cycle:          11, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       705
+Cycle:          12, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       769
+Cycle:          13, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       833
+Cycle:          14, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       897
+Cycle:          15, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       961
+Cycle:          16, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1025
+Cycle:          17, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1089
+Cycle:          18, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1153
+Cycle:          19, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1217
+Cycle:          20, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1281
+Cycle:          21, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1345
+Cycle:          22, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1409
+Cycle:          23, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1473
+Cycle:          24, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1537
+Cycle:          25, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1632
+Cycle:          26, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1665
+Cycle:          27, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1729
+Cycle:          28, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1793
+Cycle:          29, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1795
+Cycle:          30, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1921
+Cycle:          31, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      1923
+Cycle:          32, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2049
+Cycle:          33, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2051
+Cycle:          34, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2177
+Cycle:          35, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2055
+Cycle:          36, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2305
+Cycle:          37, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2307
+Cycle:          38, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2433
+Cycle:          39, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2435
+Cycle:          40, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2561
+Cycle:          41, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      2625
+Cycle:          42, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:      3585
+Cycle:          43, Opcode: 00, RD: 16, RS1:  2, RS2:  0, Imm:  46002433
+Cycle:          44, Opcode: 00, RD: 16, RS1:  2, RS2:  0, Imm:      4096
+Cycle:          45, Opcode: 00, RD: 16, RS1:  2, RS2:  0, Imm:      4096
+Cycle:          46, Opcode: 03, RD: 19, RS1: 26, RS2:  5, Imm:         0
+Cycle:          47, Opcode: 03, RD: 16, RS1: 16, RS2: 16, Imm:         1
+Cycle:          48, Opcode: 04, RD: 17, RS1: 20, RS2: 16, Imm: 335544320
+Cycle:          49, Opcode: 04, RD: 19, RS1:  7, RS2: 14, Imm:         1
+Cycle:          50, Opcode: 04, RD:  2, RS1: 10, RS2: 10, Imm:         0
+Cycle:          51, Opcode: 03, RD: 18, RS1: 27, RS2:  7, Imm: 246918880
+Cycle:          52, Opcode: 03, RD: 18, RS1: 27, RS2: 21, Imm: 469762048
+Cycle:          53, Opcode: 05, RD:  2, RS1:  0, RS2: 17, Imm:        32
+Cycle:          54, Opcode: 05, RD:  9, RS1:  7, RS2:  3, Imm: 167772160
+Cycle:          55, Opcode: 03, RD:  2, RS1: 27, RS2: 18, Imm:     87360
+Cycle:          56, Opcode: 03, RD:  3, RS1: 18, RS2: 31, Imm:         0
+Cycle:          57, Opcode: 05, RD:  3, RS1: 10, RS2: 29, Imm:        32
+Cycle:          58, Opcode: 05, RD:  3, RS1: 10, RS2: 29, Imm:       160
+Cycle:          59, Opcode: 04, RD: 19, RS1: 27, RS2: 19, Imm: 402653216
+Cycle:          60, Opcode: 04, RD: 19, RS1: 27, RS2: 19, Imm: 402654144
+Cycle:          61, Opcode: 04, RD:  0, RS1:  0, RS2:  0, Imm:         0
+Cycle:          62, Opcode: 04, RD: 16, RS1:  0, RS2:  0, Imm:         0
+Cycle:          63, Opcode: 04, RD: 16, RS1:  0, RS2:  0, Imm:         0
+Cycle:          64, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:         1
+Cycle:          65, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:        65
+Cycle:          66, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       129
+Cycle:          67, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       193
+Cycle:          68, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       257
+Cycle:          69, Opcode: 00, RD:  0, RS1:  0, RS2:  0, Imm:       321
+Stopped at time : 720 ns : File "/home/ise/Shared_drive_for_ECE_4375/CPU/CPU_tb.v" Line 53

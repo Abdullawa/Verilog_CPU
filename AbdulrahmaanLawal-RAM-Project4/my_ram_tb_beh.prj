@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/RAM.v"
+verilog work "my_ram.v"
+verilog work "my_ram_tb.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

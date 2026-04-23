@@ -1,0 +1,4 @@
+verilog work "twoInputNOR.v"
+verilog work "twoInputNAND.v"
+verilog work "ThreeInputAND.v"
+verilog work "combined.v"

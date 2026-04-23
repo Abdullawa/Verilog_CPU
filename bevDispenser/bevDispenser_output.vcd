@@ -1,0 +1,125 @@
+$date
+	Sun Feb 22 17:39:05 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module bevDispenser_tb $end
+$var wire 1 ! outbev4 $end
+$var wire 1 " outbev3 $end
+$var wire 1 # outbev2 $end
+$var wire 1 $ outbev1 $end
+$var wire 11 % change [10:0] $end
+$var reg 1 & inbev1 $end
+$var reg 1 ' inbev2 $end
+$var reg 1 ( inbev3 $end
+$var reg 1 ) inbev4 $end
+$var reg 11 * inmoney [10:0] $end
+$var reg 1 + rst $end
+$scope module uut $end
+$var wire 1 , beventered $end
+$var wire 1 & inbev1 $end
+$var wire 1 ' inbev2 $end
+$var wire 1 ( inbev3 $end
+$var wire 1 ) inbev4 $end
+$var wire 11 - inmoney [10:0] $end
+$var wire 1 + rst $end
+$var parameter 10 . BEV1_VALUE $end
+$var parameter 10 / BEV2_VALUE $end
+$var parameter 10 0 BEV3_VALUE $end
+$var parameter 10 1 BEV4_VALUE $end
+$var reg 11 2 change [10:0] $end
+$var reg 1 $ outbev1 $end
+$var reg 1 # outbev2 $end
+$var reg 1 " outbev3 $end
+$var reg 1 ! outbev4 $end
+$var reg 11 3 tottalbevvalue [10:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11111010 1
+b11100001 0
+b11001000 /
+b10101111 .
+$end
+#0
+$dumpvars
+bx 3
+b0 2
+b0 -
+0,
+1+
+b0 *
+0)
+0(
+0'
+0&
+b0 %
+0$
+0#
+0"
+0!
+$end
+#20000
+b11001 %
+b11001 2
+1$
+b10101111 3
+1,
+b11001000 *
+b11001000 -
+1&
+0+
+#40000
+0,
+b0 *
+b0 -
+0&
+#60000
+b11001000 %
+b11001000 2
+0$
+b11100001 3
+1,
+b11001000 *
+b11001000 -
+1(
+#80000
+0,
+b0 *
+b0 -
+0(
+#100000
+b0 %
+b0 2
+1#
+b11001000 3
+1,
+b11001000 *
+b11001000 -
+1'
+#120000
+0,
+b0 *
+b0 -
+0'
+#140000
+b11001000 %
+b11001000 2
+0#
+b11111010 3
+1,
+b11001000 *
+b11001000 -
+1)
+#160000
+0,
+b0 *
+b0 -
+0)
+#180000

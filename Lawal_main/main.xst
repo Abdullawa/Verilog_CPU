@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Shared_drive_for_ECE_4375/main/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Shared_drive_for_ECE_4375/main/xst"
+elaborate
+-ifn main.prj
+-ifmt mixed

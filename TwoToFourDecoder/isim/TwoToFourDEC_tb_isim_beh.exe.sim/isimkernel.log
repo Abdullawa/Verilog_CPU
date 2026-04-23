@@ -1,0 +1,10 @@
+Command line:
+   TwoToFourDEC_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  35335
+
+Wed Feb  4 16:40:15 2026
+
+
+ Elaboration Time: 0.16 sec
