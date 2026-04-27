@@ -1,55 +1,62 @@
 `timescale 1ns / 1ps 
 
 module CPU(
-    input clk, rst,
-    output [4:0] opcode,          // Send to ALU
-    output [4:0] rd,              // Destination register
-    output [4:0] rs1,             // Source register 1
-    output [4:0] rs2,             // Source register 2
-    output [28:0] immediate       // The constant/address value
+    input clk,
+    input rst,
+    input [48:0] ROM_data_input,
+    input [31:0] RAM_data_output,
+    output[5:0] ROM_address,             // Address to fetch instruction from ROM
+    output [31:0] RAM_address,           // Address to read/write in RAM
+    output [31:0] RAM_data_input,        // Data to write to RAM
+    output RAM_write_enable              // Control signal to write to RAM
     );
 
-    // Wire declarations
-    wire [48:0] instructionline;  // From ROM
+    // Decoder outputs
+    wire [4:0]  opcode;
+    wire [1:0]  mode;
+    wire [4:0]  rd;
+    wire [4:0]  rs1;
+    wire [31:0] immediate;
+    wire        load_enable;
+    wire        b_mux_control;
+    wire        o_mux_control;
+    wire        mem_write_control;
+    wire        branch_control;
+
+    // Register file outputs
+    wire [31:0] bus_a;
+    wire [31:0] bus_b;
+
+    // ALU outputs
+    wire [31:0] alu_result;
+    wire        z_flag;
+    wire        n_flag;
+    wire        c_flag;
+    wire        v_flag;
+
+    // Mux outputs
     wire [31:0] ina_value;
     wire [31:0] inb_value;
-    wire [31:0] alu_result;
-    wire z_flag, n_flag, c_flag, v_flag;
-    wire [31:0] bus_a, bus_b;
     wire [31:0] write_data;
-    wire load_enable, rl_signal;
-    wire [5:0] pc;                // Program counter
-    // RAM instantiation for data memory
-    wire [7:0] ram_addr;         // 8-bit address
-    wire [31:0] ram_data_in;     // Data to write
-    wire [31:0] ram_data_out;    // Data read from RAM
-    wire ram_we;                 // RAM write enable
 
-    reg [5:0] pc_reg;
-
-    // ROM instantiation
-    my_rom u3(
-        .clk(clk),
-        .en(1'b1),
-        .addr(pc),
-        .data_out(instructionline)
-    );
-
-    // Instruction decoder
-    assign opcode = instructionline[48:44];
-    assign rd = instructionline[43:39];
-    assign rs1 = instructionline[38:34];
-    assign rs2 = instructionline[33:29];
-    assign immediate = instructionline[28:0];
-
-    assign ina_value = bus_a;  // Missing semicolon
-    assign inb_value = bus_b;  // Need this too
-    assign write_data = alu_result;  // Write ALU result back
-    assign load_enable = 1'b1;  // Always enable writes for now
-    assign rl_signal = 1'b1;    // Always read/load for now
+    // PC and IR
+    reg [5:0]  pc_reg;
+    reg [48:0] ir;
 
 
-    ALU u1( 
+    // Mux logic
+    assign ina_value  = bus_a;
+    assign inb_value  = b_mux_control ? immediate : bus_b;
+    assign write_data = o_mux_control ? RAM_data_output : alu_result;
+      
+    assign ROM_address    = pc_reg;
+    assign RAM_address    = alu_result;
+    assign RAM_data_input = bus_a;
+    assign RAM_write_enable = mem_write_control;
+
+
+
+ ALU u1( 
     .ina(ina_value),           // 32-bit number
     .inb(inb_value),           // 32-bit number
     .opcode(opcode),           // Operation code
@@ -69,26 +76,39 @@ module CPU(
     .BusB(bus_b),                // Read output for rs2
     .BusD(write_data),           // Data to write back
     .Aselcect(rs1),              // Read address A (source register 1)
-    .Bselect(rs2),               // Read address B (source register 2)
-    .RL(rl_signal)               // Read/Load control
+    .Bselect(immediate[4:0]),               // Read address B (source register 2)
+    .RL(load_enable)               // Read/Load control
     );
 
-     my_ram u4(
-        .clk(clk),
-        .en(1'b1),               // RAM always enabled
-        .addra(ram_addr),        // Address for load/store
-        .wea(ram_we),            // Write enable
-        .data_in(ram_data_in),   // Data to write
-        .data_out(ram_data_out)  // Data read
+    Decoder u3(
+    .instructionline(ir), // 49-bit instruction from ROM
+    .opcode(opcode),                 // 5-bit opcode
+    .mode(mode),                     // 2-bit addressing mode
+    .rd(rd),                         // 5-bit destination register
+    .rsA(rs1),                       // 5-bit source register A
+    .immediate(immediate),           // 32-bit immediate value
+    .rLoad(load_enable),             // Control signal to load register
+    .bMux(b_mux_control),            // Control signal for ALU input B multiplexer
+    .oMux(o_mux_control),            // Control signal for output multiplexer
+    .memWrite(mem_write_control),     // Control signal for memory write
+    .branch(branch_control)          // Control signal for branching
     );
 
-    always @(posedge clk or posedge rst) begin
-        if (rst)
-            pc_reg <= 6'b0;  // Reset PC to 0
-        else
-            pc_reg <= pc_reg + 1;  // Increment PC each cycle
+    always @(posedge clk , posedge rst) begin
+        if (rst) begin
+            pc_reg <= 0; // Reset PC to 0
+            ir <= 0;     // Clear IR
+        end else begin
+            ir <= ROM_data_input; // Fetch instruction from ROM
+
+            // Update PC based on branch control signal
+            if (branch_control) begin
+                pc_reg <= pc_reg + immediate[5:0]; // Branch to target address
+            end else begin
+                pc_reg <= pc_reg + 1; // Move to next instruction
+            end
+        end
+        
     end
-    
-    assign pc = pc_reg;
 
 endmodule
