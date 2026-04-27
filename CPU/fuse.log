@@ -3,41 +3,25 @@ ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/CPU/ipcore_dir/ROM.v" into library work
-Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/CPU/ipcore_dir/RAM.v" into library work
 Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/CPU/../register_file.v" into library work
+Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/CPU/Decoder.v" into library work
 Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/CPU/../ALU/ALU.v" into library work
-Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/CPU/../AbdulrahmaanLawal-ROM-Project4/my_rom.v" into library work
-Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/CPU/../AbdulrahmaanLawal-RAM-Project4/my_ram.v" into library work
 Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/CPU/CPU.v" into library work
 Analyzing Verilog file "/home/ise/Shared_drive_for_ECE_4375/CPU/CPU_tb.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 97128 KB
-Fuse CPU Usage: 1350 ms
-Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
-Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
-Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
-Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
-Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
-Compiling module ROM
-Compiling module my_rom
+Fuse Memory Usage: 95060 KB
+Fuse CPU Usage: 1060 ms
 Compiling module ALU
 Compiling module register_file
-Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
-Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
-Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
-Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
-Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
-Compiling module RAM
-Compiling module my_ram
+Compiling module Decoder
 Compiling module CPU
 Compiling module CPU_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Compiled 19 Verilog Units
+Compiled 6 Verilog Units
 Built simulation executable /home/ise/Shared_drive_for_ECE_4375/CPU/CPU_tb_isim_beh.exe
-Fuse Memory Usage: 103572 KB
-Fuse CPU Usage: 2540 ms
-GCC CPU Usage: 5560 ms
+Fuse Memory Usage: 98292 KB
+Fuse CPU Usage: 1440 ms
+GCC CPU Usage: 1500 ms

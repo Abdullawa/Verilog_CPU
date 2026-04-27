@@ -1,5 +1,3 @@
 verilog work "../register_file.v"
 verilog work "../ALU/ALU.v"
-verilog work "../AbdulrahmaanLawal-ROM-Project4/my_rom.v"
-verilog work "../AbdulrahmaanLawal-RAM-Project4/my_ram.v"
 verilog work "CPU.v"

@@ -18,6 +18,7 @@ module CPU(
     wire [4:0]  rs1;
     wire [31:0] immediate;
     wire        load_enable;
+    wire        a_mux_control;
     wire        b_mux_control;
     wire        o_mux_control;
     wire        mem_write_control;
@@ -45,7 +46,7 @@ module CPU(
 
 
     // Mux logic
-    assign ina_value  = bus_a;
+    assign ina_value  = a_mux_control ? immediate : bus_a;
     assign inb_value  = b_mux_control ? immediate : bus_b;
     assign write_data = o_mux_control ? RAM_data_output : alu_result;
       
@@ -77,7 +78,9 @@ module CPU(
     .BusD(write_data),           // Data to write back
     .Aselcect(rs1),              // Read address A (source register 1)
     .Bselect(immediate[4:0]),               // Read address B (source register 2)
-    .RL(load_enable)               // Read/Load control
+    .RL(load_enable),               // Read/Load control
+    .clk(clk),  
+    .rst(rst)
     );
 
     Decoder u3(
@@ -88,6 +91,7 @@ module CPU(
     .rsA(rs1),                       // 5-bit source register A
     .immediate(immediate),           // 32-bit immediate value
     .rLoad(load_enable),             // Control signal to load register
+    .aMux(a_mux_control),            // Control signal for ALU input A multiplexer
     .bMux(b_mux_control),            // Control signal for ALU input B multiplexer
     .oMux(o_mux_control),            // Control signal for output multiplexer
     .memWrite(mem_write_control),     // Control signal for memory write

@@ -1,6 +1,6 @@
 MO my_ram NULL ../AbdulrahmaanLawal-RAM-Project4/my_ram.v vlg51/my__ram.bin 1776847997
-MO CPU NULL CPU.v vlg70/_c_p_u.bin 1776847997
+MO CPU NULL CPU.v vlg70/_c_p_u.bin 1777213446
 MO my_ram_tb NULL ../AbdulrahmaanLawal-RAM-Project4/my_ram_tb.v vlg7A/my__ram__tb.bin 1776839941
 MO my_rom NULL ../AbdulrahmaanLawal-ROM-Project4/my_rom.v vlg17/my__rom.bin 1776847997
-MO register_file NULL ../register_file.v vlg7C/register__file.bin 1776847997
-MO ALU NULL ../ALU/ALU.v vlg2A/_a_l_u.bin 1776847997
+MO register_file NULL ../register_file.v vlg7C/register__file.bin 1777213446
+MO ALU NULL ../ALU/ALU.v vlg2A/_a_l_u.bin 1777213446

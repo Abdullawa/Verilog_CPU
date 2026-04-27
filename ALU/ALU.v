@@ -14,7 +14,7 @@ module ALU (
     output reg Z, N, C, V
 );
 
-    always @(posedge clk) begin
+    always @(*) begin
         
         if(rst == 1)begin
             out = 0;
